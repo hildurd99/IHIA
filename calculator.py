@@ -1,7 +1,7 @@
 class Calc(object):
 #@staticmethod
-    def ADD(input: str) -> int:
-        return 0
-
-
-#print(ADD(""))
+    def ADD(input):
+        if input == "":
+            return 0
+        if int(input) == input:
+            return input
