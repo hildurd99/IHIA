@@ -3,5 +3,5 @@ class Calc(object):
     def ADD(input):
         if input == "":
             return 0
-        if int(input) == input:
-            return input
+        if input.isdigit():
+            return int(input)
