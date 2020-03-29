@@ -15,11 +15,15 @@ def test_add_morenumbers_returns_sum() -> None:
 def test_add_newline_returns_sum() -> None:
     assert Calc.ADD("1\n2,3") == 6
 
+def test_add_greater1000_returns_sum() -> None:
+    assert Calc.ADD("1001,2") == 2
+
 def main():
     test_add_empty_returns_zero()
     test_add_1_returns_1()
     test_add_twonumbers_returns_sum()
     test_add_morenumbers_returns_sum()
     test_add_newline_returns_sum()
+    test_add_greater1000_returns_sum()
 
 main()
